@@ -1,0 +1,87 @@
+.navContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.entete {
+  height: 100px;
+  width: 100%;
+  background-color: #1f2039;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: white;
+  margin-left: 50px;
+}
+/* ------------grid paysages portraits----------- */
+.grid-paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+}
+
+.grid-paysages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-portrait {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+}
+.grid-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.portfolio-section1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* --------------survol des images------------------ */
+.lien-conteneur {
+  position: relative;
+}
+.photo-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5 em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.lien-conteneur:hover .photo-hover {
+  display: flex;
+}
+/* ---------------responsive--------------- */
+@media screen and (max-width: 996px) {
+  .grid-paysages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-portrait {
+    display: flex;
+    flex-direction: column;
+  }
+}

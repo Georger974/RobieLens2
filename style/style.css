@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-family: "Montserrat", sans empattement;
+  font-size: clamp(35px, 5vw, 65px);
+}
+h2 {
+  font-family: "Montserrat", sans empattement;
+  font-size: clamp(10px, 4vw, 40px);
+}
+p,
+li {
+  font-size: clamp(8px, 5vw, 30px);
+  font-family: "Manrope", sans empattement;
+  color: #f9f8ff;
+}
+nav a {
+  font-size: clamp(15px, 5vw, 30px);
+  font-family: "Manrope", sans empattement;
+  color: #242424;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lien-icone :hover {
+  opacity: 0.5;
+}
+.navContainer :hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+.liens :hover {
+  opacity: 0.5;
+}
+header,
+footer {
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+}
+/* --------------responsive-------------------- */
+@media screen and (max-width: 1130px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navContainer {
+    padding: 20px;
+    width: 100%;
+  }
+
+  label {
+    padding: 10px;
+  }
+  /* h2 {
+    font-size: 1.2em;
+  } */
+  /* p,
+  li {
+    font-size: 1em;
+  } */
+  /* h1 {
+    font-size: 2em;
+  } */
+  main {
+    padding: 10px;
+  }
+}
